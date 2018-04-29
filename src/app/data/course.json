@@ -1,0 +1,27 @@
+{
+  "courses":[
+    {
+      "course_idt": 953323,
+      "course_name": "SOFTWARE CONS TEST&MAINT",
+      "course_credit": 3,
+      "course_sec": 701,
+      "course_seat": 100,
+      "course_teacher": "Dr. Chartchai",
+      "course_semester": "First",
+      "course_year": "2017",
+      "course_time": "09.00 AM - 12.00 AM",
+      "course_day": "Monday Thursday"
+    },{
+      "course_idt": 953411,
+      "course_name": "Artificial Intelligence",
+      "course_credit": 3,
+      "course_sec": 701,
+      "course_seat": 20,
+      "course_teacher": "Dr. Pathathai",
+      "course_semester": "Second",
+      "course_year": "2017",
+      "course_time": "09.00 AM - 12.00 AM",
+      "course_day": "Monday Thursday"
+    }
+  ]
+}
