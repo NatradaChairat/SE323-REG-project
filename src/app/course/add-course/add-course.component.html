@@ -1,3 +1,161 @@
-<p>
-  add-course works!
-</p>
+
+<section class="primary-overlay py-3">
+  <div class="text-white">
+    <div class="container davy-content sang-content">
+      <div class="row">
+        <div class="d-flex col-md-12 justify-content-center py-4 mt-1">
+          <h4>Create a Course</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <form>
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right">Course ID</label>
+                <div class="col-4">
+                  <input class="form-control" id="course_idt" v-model="course_idt"  style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+                <label class="col-2 col-form-label text-right">Number of Credit</label>
+                <div class="col-4">
+                  <input class="form-control" id="course_credit" v-model="course_credit" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right">Course Name</label>
+                <div class="col-10">
+                  <input class="form-control" id="course_name" v-model="course_name" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right">Section</label>
+                <div class="col-4">
+                  <input class="form-control" id="course_sec" v-model="course_sec" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+                <label class="col-2 col-form-label text-right">Number of Seat</label>
+                <div class="col-4">
+                  <input class="form-control" id="course_seat" v-model="course_seat" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right" >Lecturer</label>
+                <div class="col-10" id="dynamicInput">
+                  <input class="form-control mt3" id="course_teacher" v-model="course_teacher" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+              </div>
+              <div class="row pb-3">
+                <div class="col-2"></div>
+                <div class="col-10">
+                  <button class="btn btn-success btn-sm" type="button" onClick="addInput('dynamicInput');">Add Lecturer</button>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right">Semester</label>
+                <div class="col-4">
+                  <div class="form-control form-inline d-flex justify-content-between" style="background-color: rgba(255, 255, 255, 0.5)">
+                    <div class="form-check">
+                      <label class="form-check-label ">
+                        <input class="form-check-input" type="radio"  name="semester" id="semester_1" value="option1" checked >
+                        First
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio"  name="semester" id="semester_2" value="option2">
+                        Second
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio"  name="semester" id="semester_3" value="option3">
+                        Summer
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <label class="col-2 col-form-label text-right">Academic Year</label>
+                <div class="col-4">
+                  <input class="form-control" id="course_year" v-model="course_year" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right">Time</label>
+                <div class="col-4">
+                  <input class="form-control" type="time" id="course_timeStart" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+                <label class="col-2 col-form-label text-right">To</label>
+                <div class="col-4">
+                  <input class="form-control" type="time"  id="course_timeEnd" style="background-color: rgba(255, 255, 255, 0.5)" required>
+                </div>
+              </div>
+
+              <div class="row pb-3">
+                <label class="col-2 col-form-label text-right">Day</label>
+                <div class="col-10">
+                  <div class="form-control form-inline d-flex justify-content-between" style="background-color: rgba(255, 255, 255, 0.5)">
+                    <div class="form-check">
+                      <label class="form-check-label ">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Sunday" value="option1" >
+                        Sunday
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Monday" value="option2" checked>
+                        Monday
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Tuesday" value="option3">
+                        Wednesday
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Wednesday" value="option4">
+                        Wednesday
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Thursday" value="option5" checked>
+                        Thursday
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Friday" value="option6">
+                        Friday
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"  name="CourseDay" id="Saturday" value="option7">
+                        Saturday
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row pt-2 pb-5">
+                <div class= "col-12 d-flex justify-content-center">
+                  <button type="submit" class="btn btn-primary mx-2">Create</button>
+                  <button type="button" class="btn btn-secondary mx-2">Clear</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
