@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { LoginComponent } from './login/login.component';
@@ -14,7 +13,6 @@ import { ListStudentComponent } from './student/list-student/list-student.compon
 import { ViewStudentComponent } from './student/view-student/view-student.component';
 import { AddCourseComponent } from './course/add-course/add-course.component';
 import { ListCourseComponent } from './course/list-course/list-course.component';
-
 
 @NgModule({
   declarations: [
