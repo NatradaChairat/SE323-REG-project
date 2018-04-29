@@ -4,6 +4,8 @@ import {LoginComponent} from "./login/login.component";
 import {AddCourseComponent} from "./course/add-course/add-course.component";
 import {ListCourseComponent} from "./course/list-course/list-course.component";
 import {ViewStudentComponent} from "./student/view-student/view-student.component";
+import {ListStudentComponent} from "./student/list-student/list-student.component";
+import {AddStudentComponent} from "./student/add-student/add-student.component";
 
 const appRoutes: Routes = [
   {path: '',redirectTo: 'login', pathMatch: 'full'},
@@ -13,9 +15,9 @@ const appRoutes: Routes = [
   },
   {path: 'courses', component:ListCourseComponent},
   {path: 'add-course', component: AddCourseComponent},
-  {path: 'detail/:id',component: ViewStudentComponent},
-  {path: 'add', component: AddCourseComponent },
-  {path: 'list', component: ListCourseComponent},
+  {path: 'student/:id',component: ViewStudentComponent},
+  {path: 'add-student', component: AddStudentComponent },
+  {path: 'students', component: ListStudentComponent},
 ];
 
 @NgModule({
