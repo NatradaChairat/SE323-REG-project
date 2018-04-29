@@ -14,6 +14,7 @@ import { ListStudentComponent } from './student/list-student/list-student.compon
 import { ViewStudentComponent } from './student/view-student/view-student.component';
 import { AddCourseComponent } from './course/add-course/add-course.component';
 import { ListCourseComponent } from './course/list-course/list-course.component';
+import { FeeStudentComponent } from './student/fee-student/fee-student.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ListCourseComponent } from './course/list-course/list-course.component'
     ListStudentComponent,
     ViewStudentComponent,
     AddCourseComponent,
-    ListCourseComponent
+    ListCourseComponent,
+    FeeStudentComponent
   ],
   imports: [
     BrowserModule,AppRoutingModule
