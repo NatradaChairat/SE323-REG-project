@@ -16,11 +16,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   login(username: string, password: string) {
-    console.log('Auth: ', this.authService.login(username, password));
     if (this.authService.login(username, password)) {
       //retrieve type //this is bad logic for time being
       this.navigateUser(username);
     }
+    console.log('CurrentUser: ', localStorage.getItem('currentUser'));
   }
 
   navigateUser(type: string) {

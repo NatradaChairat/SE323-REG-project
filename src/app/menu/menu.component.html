@@ -6,33 +6,34 @@
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li *ngIf="isStudent" class="nav-item">
           <a routerLink="/enrolled-courses" class="nav-link">Enrolled Courses</a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/login" class="nav-link">Login</a>
-        </li>
 
-        <li class="nav-item">
+        <li *ngIf="isStudent" class="nav-item">
           <a routerLink="/enroll-course" class="nav-link">Enrollment</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="isStudent" class="nav-item">
           <a routerLink="/tuition-fee" class="nav-link">Tuition Fee</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="isStudent" class="nav-item">
           <a routerLink="/grade" class="nav-link">Grade</a>
         </li>
 
-        <li class="nav-item">
+        <li *ngIf="isLecturer" class="nav-item">
           <a routerLink="/teaching-courses" class="nav-link">Courses</a>
         </li>
 
-        <li class="nav-item">
+        <li *ngIf="isAdmin" class="nav-item">
           <a routerLink="/create-course" class="nav-link">Create a Course</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link">Logout</a>
+        <li *ngIf="!hasLoggedIn" class="nav-item">
+          <a routerLink="/login" class="nav-link">Login</a>
+        </li>
+
+        <li *ngIf="hasLoggedIn" class="nav-item">
+          <a href="#" (click)="this.logout()" class="nav-link">Logout</a>
         </li>
       </ul>
     </div>
