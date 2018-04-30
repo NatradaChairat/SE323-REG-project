@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,7 @@ import { GradeStudentComponent } from './lecturer/grade-student/grade-student.co
 import { CreateCourseComponent } from './admin/create-course/create-course.component';
 
 import { AuthService } from './services/auth.service';
+import { CourseService } from './services/course.service';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,8 @@ import { AuthService } from './services/auth.service';
     GradeStudentComponent,
     CreateCourseComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [AuthService],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpModule],
+  providers: [AuthService, CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

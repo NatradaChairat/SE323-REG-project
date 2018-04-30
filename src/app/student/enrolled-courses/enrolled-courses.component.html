@@ -27,89 +27,17 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>953323</td>
-                  <td>Software Construction, Testing and Maintenance</td>
-                  <td class="td-center">701</td>
-                  <td class="td-center">3</td>
+                <tr *ngFor="let course of courses; let i = index" [attr.data-index]="i">
+                  <th scope="row">{{i+ 1}}</th>
+                  <td>{{course.courseId}}</td>
+                  <td>{{course.courseName}}</td>
+                  <td class="td-center">{{course.courseSec}}</td>
+                  <td class="td-center">{{course.courseCredit}}</td>
                   <td>CAMT104</td>
-                  <td class="td-center">Fri</td>
-                  <td>9.30-11.30</td>
+                  <td class="td-center">{{course.courseDay}}</td>
+                  <td>{{course.courseTime}}</td>
                   <td class="td-center">P</td>
                   <td><button class="btn btn-success btn-sm" type="button">Remove</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>953323</td>
-                  <td>Software Construction, Testing and Maintenance</td>
-                  <td class="td-center">701</td>
-                  <td class="td-center">3</td>
-                  <td>CAMT104</td>
-                  <td class="td-center">Fri</td>
-                  <td>9.30-11.30</td>
-                  <td class="td-center">P</td>
-                  <td><button class="btn btn-success btn-sm" type="button">Remove</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>953323</td>
-                  <td>Software Construction, Testing and Maintenance</td>
-                  <td class="td-center">701</td>
-                  <td class="td-center">3</td>
-                  <td>CAMT104</td>
-                  <td class="td-center">Fri</td>
-                  <td>9.30-11.30</td>
-                  <td class="td-center">P</td>
-                  <td><button class="btn btn-success btn-sm" type="button">Remove</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>953323</td>
-                  <td>Software Construction, Testing and Maintenance</td>
-                  <td class="td-center">701</td>
-                  <td class="td-center">3</td>
-                  <td>CAMT104</td>
-                  <td class="td-center">Fri</td>
-                  <td>9.30-11.30</td>
-                  <td class="td-center">P</td>
-                  <td><button class="btn btn-success btn-sm" type="button">Remove</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>953323</td>
-                  <td>Software Construction, Testing and Maintenance</td>
-                  <td class="td-center">701</td>
-                  <td class="td-center">3</td>
-                  <td>CAMT104</td>
-                  <td class="td-center">Fri</td>
-                  <td>9.30-11.30</td>
-                  <td class="td-center">P</td>
-                  <td><button class="btn btn-success btn-sm" type="button">Remove</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td>953323</td>
-                  <td>Software Construction, Testing and Maintenance</td>
-                  <td class="td-center">701</td>
-                  <td class="td-center">3</td>
-                  <td>CAMT104</td>
-                  <td class="td-center">Fri</td>
-                  <td>9.30-11.30</td>
-                  <td class="td-center">P</td>
-                  <td><button class="btn btn-success btn-sm" type="button">Remove</button></td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
-                  <td></td>
-                  <td></td>
-                  <td class="td-center">Credits</td>
-                  <td class="td-center">18</td>
-                  <td></td>
-                  <td class="td-center"></td>
-                  <td></td>
-                  <td class="td-center"></td>
-                  <td></td>
                 </tr>
               </tbody>
             </table>

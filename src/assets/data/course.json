@@ -1,0 +1,88 @@
+{
+  "courses": [
+    {
+      "courseId": "953323",
+      "courseName": "SOFTWARE CONS TEST&MAINT",
+      "courseCredit": 3,
+      "courseSec": "701",
+      "courseSeat": 100,
+      "courseTeacher": "Dr. Chartchai",
+      "courseSemester": "First",
+      "courseYear": "2017",
+      "courseTime": "09.00 AM - 12.00 AM",
+      "courseDay": "Monday Thursday"
+    },
+    {
+      "courseId": "953411",
+      "courseName": "Artificial Intelligence",
+      "courseCredit": 3,
+      "courseSec": "701",
+      "courseSeat": 20,
+      "courseTeacher": "Dr. Pathathai",
+      "courseSemester": "Second",
+      "courseYear": "2017",
+      "courseTime": "09.00 AM - 12.00 AM",
+      "courseDay": "Monday Thursday"
+    },
+    {
+      "courseId": "953422",
+      "courseName": "SOFTWARE QUALITY ASSURANCE",
+      "courseCredit": 3,
+      "courseSec": "701",
+      "courseSeat": 100,
+      "courseTeacher": "Prof. Kittitouch",
+      "courseSemester": "Second",
+      "courseYear": "2017",
+      "courseTime": "09.30 AM - 12.30 AM",
+      "courseDay": "Friday"
+    },
+    {
+      "courseId": "953392",
+      "courseName": "SOFTWARE ENGINEERING PREPROJECT",
+      "courseCredit": 1,
+      "courseSec": "701",
+      "courseSeat": 100,
+      "courseTeacher": "Dr. Prompong",
+      "courseSemester": "Second",
+      "courseYear": "2017",
+      "courseTime": "08.00 AM - 09.00 AM",
+      "courseDay": "Wendesday"
+    },
+    {
+      "courseId": "953495",
+      "courseName": "SELECTED TOPICS IN SE 2",
+      "courseCredit": 3,
+      "courseSec": "701",
+      "courseSeat": 100,
+      "courseTeacher": "Dr. Pattama",
+      "courseSemester": "Second",
+      "courseYear": "2017",
+      "courseTime": "14.30 AM - 17.30 AM",
+      "courseDay": "Tuesday"
+    },
+    {
+      "courseId": "953231",
+      "courseName": "OBJECT ORIENTED PROGRAMMING",
+      "courseCredit": 3,
+      "courseSec": "701",
+      "courseSeat": 100,
+      "courseTeacher": "Dr. Prompong",
+      "courseSemester": "First",
+      "courseYear": "2017",
+      "courseTime": "09.30 AM - 11.00 AM",
+      "courseDay": "Monday Thursday"
+    },
+    {
+      "courseId": "953103",
+      "courseName": "PROGRAMMING LOGICAL THINKING",
+      "courseCredit": 3,
+      "courseSec": "701",
+      "courseSeat": 100,
+      "courseTeacher": "Dr. Chartchai",
+      "courseSemester": "First",
+      "courseYear": "2017",
+      "courseTime": "09.30 AM - 11.00 AM",
+      "courseDay": "Tuesday Friday"
+    }
+  ]
+}
