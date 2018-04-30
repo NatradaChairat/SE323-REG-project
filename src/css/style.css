@@ -1,23 +1,27 @@
 html {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+}
 
 body {
-  background: url("../img/mountains.jpg");
+  background: url('/assets/mountains.jpg');
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .navbar {
   box-shadow: 2px 2px 5px #3291a6;
   opacity: 1;
-  background: #fff; }
-  .navbar .nav-item {
-    font-size: 1.4rem;
-    padding-right: 20px; }
+  background: #fff;
+}
+.navbar .nav-item {
+  font-size: 1.4rem;
+  padding-right: 20px;
+}
 
 .primary-overlay {
   position: absolute;
@@ -25,19 +29,25 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .davy-content {
-  margin-top: 65px; }
+  margin-top: 65px;
+}
 
 .bam-content {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+}
 
 .sang-content {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+}
 
 .td-center {
-  text-align: center; }
+  text-align: center;
+}
 
 .td-end {
-  text-align: right; }
+  text-align: right;
+}
