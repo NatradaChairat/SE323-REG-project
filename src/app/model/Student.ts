@@ -1,9 +1,7 @@
-import { Transcript } from './semester';
-export class Student {
-  studentId: string;
+import { User } from './user';
+import { Semester } from './semester';
+export class Student extends User {
   firstname: string;
   lastname: string;
-  username: string;
-  password: string;
-  transcript: Transcript[];
+  transcript: Semester[];
 }

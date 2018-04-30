@@ -1,6 +1,4 @@
-export class Admin {
-  adminId: string;
+import { User } from './user';
+export class Admin extends User {
   adminName: string;
-  username: string;
-  password: string;
 }

@@ -1,9 +1,7 @@
+import { User } from './user';
 import { Course } from './course';
-export class Lecturer {
-  lecturerId: string;
+export class Lecturer extends User {
   firstname: string;
   lastname: string;
-  username: string;
-  password: string;
   courses: Courses[];
 }
