@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,8 @@ import { GradeComponent } from './student/grade/grade.component';
 import { CoursesComponent } from './lecturer/courses/courses.component';
 import { GradeStudentComponent } from './lecturer/grade-student/grade-student.component';
 import { CreateCourseComponent } from './admin/create-course/create-course.component';
+
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -28,8 +31,8 @@ import { CreateCourseComponent } from './admin/create-course/create-course.compo
     GradeStudentComponent,
     CreateCourseComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -25,7 +25,7 @@
           <div class="row pb-1">
             <div class="col-3"></div>
             <div class="col-6">
-              <input class="form-control" value="" placeholder="Enter your username" id="login_username" style="background-color: rgba(255, 255, 255, 0.5)" onkeydown="enterLogin()" required>
+              <input type="text" class="form-control" [(ngModel)]="username" placeholder="Enter your username" id="login_username" style="background-color: rgba(255, 255, 255, 0.5)" required>
             </div>
             <div class="col-3"></div>
           </div>
@@ -39,27 +39,27 @@
           <div class="row pb-3">
             <div class="col-3"></div>
             <div class="col-6">
-              <input class="form-control" value="" placeholder="Enter your password"  id="login_password" style="background-color: rgba(255, 255, 255, 0.5)" onkeydown="enterLogin()" required>
+              <input type="password" class="form-control" [(ngModel)]="password" placeholder="Enter your password"  id="login_password" style="background-color: rgba(255, 255, 255, 0.5)" required>
             </div>
             <div class="col-3"></div>
           </div>
           <div class="row pt-2">
             <div class= "col-12 d-flex justify-content-center"><p id="error-text" class="text-warning"></p></div>
           </div>
-          <div class="row pt-2 pb-2">
+          <div class="row pb-2">
             <div class= "col-12 d-flex justify-content-center">
-              <button type="submit" id="btn_login" class="btn btn-primary mx-2" onclick="login()">Login</button>
+              <button type="submit" id="btn_login" (click)="login(this.username, this.password)" class="btn btn-primary mx-2" >Login</button>
             </div>
           </div>
           <div class="row pt-2 pb-5">
             <div class= "col-12 d-flex justify-content-center">
-              <p>Username: student Password: student</p>
+              <p>Username: student \t Password: student</p>
             </div>
             <div class= "col-12 d-flex justify-content-center">
-              <p>Username: lecturer Password: lecturer</p>
+              <p>Username: lecturer \t Password: lecturer</p>
             </div>
             <div class= "col-12 d-flex justify-content-center">
-              <p>Username: admin Password: admin</p>
+              <p>Username: admin \t Password: admin</p>
             </div>
           </div>
         </div>
