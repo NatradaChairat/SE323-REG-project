@@ -9,5 +9,4 @@ export class Course {
   courseYear: string;
   courseTime: string;
   courseDay: string;
-
 }

@@ -1,16 +1,16 @@
-{ "admin": [
-  {
-    "adminId": "A001",
-    "adminName": "admin1",
-    "username": "admin1",
-    "password": "admin1"
-  },{
-    "adminId": "A002",
-    "adminName": "admin2",
-    "username": "admin2",
-    "password": "admin2"
-  }
-  
-]
-
+{
+  "admin": [
+    {
+      "adminId": "A001",
+      "adminName": "admin1",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "adminId": "A002",
+      "adminName": "admin2",
+      "username": "admin2",
+      "password": "admin2"
+    }
+  ]
 }
